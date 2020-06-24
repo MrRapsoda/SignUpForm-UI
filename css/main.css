@@ -172,3 +172,41 @@ body {
     display: none;
     animation: all 2s ease-in normal;
 }
+
+.sent {
+    padding: 25px;
+    border-radius: 50% 50% 50% 50%;
+    height: 60%;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    animation: square-to-circle 1s .80 normal;
+    display: none;
+    text-align: center;
+}
+
+.sent span {
+    font-size: 2em;
+    width: auto;
+}
+
+.sent div {
+    width: auto;
+}
+
+.sent .alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes square-to-circle {
+    0% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        width: 70%;
+        height: auto;
+    }
+}

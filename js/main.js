@@ -36,6 +36,19 @@ $('.button-prev').click(function() {
     }
 });
 
+$('.button-send').click(function() {
+    $('.step-three').css('display', 'none');
+    $('.sent').css('display', 'block');
+    $('.form-container__main-form .action-title').empty();
+    $('.form-container__main-form').css({ 'background': 'transparent', 'box-shadow': 'none' });
+    setTimeout(("window.location.reload();"), 2000);
+
+});
+
+function reloadPage() {
+
+}
+
 function resetAnimationStepOne() {
     $('.step-one').addClass('swoopInLeft');
     $('.step-one').removeClass('swoopInRight');
