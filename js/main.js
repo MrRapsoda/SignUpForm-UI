@@ -6,7 +6,7 @@ $('li').before().addClass('swoopInTop');
 $('.button-to-step-two').click(function() {
     $('.step-one').css('display', 'none');
     $('.step-two').css('display', 'block');
-    resetAnimationStepTwo();
+    //resetAnimationStepTwo();
     $('.step1').next().addClass("active").siblings().removeClass("active");
 });
 
@@ -15,7 +15,7 @@ $('.button-to-step-three').click(function() {
     $('.step-three').css('display', 'block');
     $('.step-two').removeClass('swoopInLeft');
     $('.step-two').addClass('swoopInRight');
-    resetAnimationStepOne();
+    //resetAnimationStepOne();
     $('.step2').next().addClass("active").siblings().removeClass("active");
 });
 
@@ -24,7 +24,7 @@ $('.button-prev').click(function() {
         $('.step-one').css('display', 'block');
         $('.step-two').css('display', 'none');
         $('.step-one').removeClass('swoopInLeft');
-        $('.step-one').addClass('swoopInRight');
+        $('.step-one').addClass('blink');
         $('.step2').prev().addClass("active").siblings().removeClass("active");
     }
 
@@ -49,7 +49,7 @@ function reloadPage() {
 
 }
 
-function resetAnimationStepOne() {
+/* function resetAnimationStepOne() {
     $('.step-one').addClass('swoopInLeft');
     $('.step-one').removeClass('swoopInRight');
 }
@@ -57,4 +57,4 @@ function resetAnimationStepOne() {
 function resetAnimationStepTwo() {
     $('.step-two').addClass('swoopInLeft');
     $('.step-two').removeClass('swoopInRight');
-}
+} */
